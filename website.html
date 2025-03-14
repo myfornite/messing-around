@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goofy Ahh Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 4em;
+            color: #ff6347;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .goofy-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .goofy-button:hover {
+            background-color: #45a049;
+        }
+        .goofy-image {
+            width: 300px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Goofy Ahh Website</h1>
+    <p>Welcome to the Goofy Ahh page. It's time for some fun!</p>
+    
+    <button class="goofy-button" onclick="displayGoofyImage()">Click for a Goofy Surprise!</button>
+
+    <div id="goofyImageContainer"></div>
+
+    <script>
+        function displayGoofyImage() {
+            var imageContainer = document.getElementById('goofyImageContainer');
+            var goofyImage = document.createElement('img');
+            goofyImage.src = 'https://i.pinimg.com/originals/6a/1f/82/6a1f82a4b34963bce295f9687fa967b4.png';  // A Goofy meme image
+            goofyImage.alt = 'Goofy Ahh';
+            goofyImage.classList.add('goofy-image');
+            imageContainer.appendChild(goofyImage);
+        }
+    </script>
+    
+</body>
+</html>
